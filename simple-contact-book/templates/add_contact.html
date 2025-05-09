@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Contact</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1 class="form-title">Add Contact</h1>
+        <form method="POST">
+            <label for="role">Role:</label>
+            <select id="role" name="role" required>
+                <option value="student">Student</option>
+                <option value="faculty">Faculty</option>
+            </select>
+
+            <label for="name">Name:</label>
+            <input id="name" type="text" name="name" required>
+
+            <label for="phone">Phone:</label>
+            <input id="phone" type="text" name="phone" required>
+
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="email" required>
+
+            <button type="submit" class="submit-button">Add Contact</button>
+        </form>
+        <a href="/" class="back-to-home">Back to Home</a>
+    </div>
+</body>
+</html>

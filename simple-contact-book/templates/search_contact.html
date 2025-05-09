@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Contact</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1 class="form-title">Search Contact</h1>
+        <form method="POST">
+            <label for="query">Search:</label>
+            <input id="query" type="text" name="query" required>
+            <button type="submit" class="submit-button">Search</button>
+        </form>
+        {% if contacts is not none %}
+            <h2 class="results-title">Results for "{{ query }}":</h2>
+            <table class="results-table">
+                <thead>
+                    <tr>
+                        <th>Role</th>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for contact in contacts %}
+                    <tr>
+                        <td>{{ contact.role }}</td>
+                        <td>{{ contact.name }}</td>
+                        <td>{{ contact.phone }}</td>
+                        <td>{{ contact.email }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% endif %}
+        <a href="/" class="back-to-home">Back to Home</a>
+    </div>
+</body>
+</html>

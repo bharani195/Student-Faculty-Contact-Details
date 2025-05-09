@@ -1,0 +1,548 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header styles */
+h1 {
+    color: #4CAF50;
+    text-align: center;
+}
+
+/* Links */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Form styles */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #eae5eb; /* Violet color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #f4f0f8; /* Darker violet */
+}
+
+/* List styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+li a {
+    margin-left: 10px;
+    color: #f44336;
+}
+
+li a:hover {
+    color: #d32f2f;
+}
+
+/* Homepage-specific styles */
+.homepage-title {
+    font-size: 2.5rem;
+    color: #007BFF;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.homepage-description {
+    font-size: 1.2rem;
+    color: #6c757d;
+    text-align: center;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.homepage-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.homepage-links a {
+    display: block;
+    width: 220px;
+    text-align: center;
+    padding: 12px;
+    background: linear-gradient(135deg, #007BFF, #0056b3);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.homepage-links a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* View Contacts Page Styles */
+.contact-group {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb); /* Light Blue gradient */
+    border: 2px solid #1565c0; /* Dark Blue border */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    overflow: hidden;
+}
+
+.contact-group h2 {
+    color: #0d47a1; /* Dark Blue */
+    text-align: center;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.contact-group ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Align Update and Delete buttons properly */
+.contact-group li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-group li .contact-info {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.contact-group li .contact-info span {
+    display: inline-block;
+    width: 30%;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.contact-group li .actions {
+    display: flex;
+    gap: 10px;
+}
+
+.contact-group li a {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+/* Update and Delete buttons in red color */
+.contact-group li a.update {
+    background-color: #f44336; /* Red color */
+    color: white;
+}
+
+.contact-group li a.update:hover {
+    background-color: #d32f2f; /* Darker red */
+}
+
+.contact-group li a.delete {
+    background-color: #f44336; /* Red color */
+    color: white;
+}
+
+.contact-group li a.delete:hover {
+    background-color: #d32f2f; /* Darker red */
+}
+
+.contact-group li a {
+    color: #d32f2f;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.contact-group li a:hover {
+    color: #b71c1c;
+}
+
+/* Ensure Update and Delete buttons are red */
+.contact-table a.update,
+.contact-table a.delete {
+    background-color: #fbfbfb; /* Violet color */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.contact-table a.update:hover,
+.contact-table a.delete:hover {
+    background-color: #f6f6f6; /* Darker violet */
+}
+
+.back-to-home {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #4CAF50;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.back-to-home:hover {
+    text-decoration: underline;
+}
+
+/* Add Contact Page Styles */
+.form-container {
+    max-width: 600px; /* Increased width for better layout */
+    margin: 50px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb); /* Light blue gradient */
+    border: 2px solid #1565c0; /* Dark blue border */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensure content stays inside the box */
+}
+
+.form-title {
+    text-align: center;
+    color: #1565c0; /* Dark blue */
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1565c0; /* Dark blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #0d47a1; /* Darker blue */
+}
+
+.back-to-home {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #1565c0; /* Dark blue */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.back-to-home:hover {
+    text-decoration: underline;
+}
+
+/* Ensure Update and Delete buttons are aligned in the same line */
+.contact-table td {
+    vertical-align: middle;
+    text-align: left;
+    padding: 10px;
+}
+
+.contact-table td.actions {
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* Ensure Update and Delete buttons are aligned in the same row */
+.contact-table td.actions {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px; /* Add consistent spacing between buttons */
+    align-items: center;
+}
+
+/* Update and Delete links in red color */
+.contact-table a.update,
+.contact-table a.delete {
+    color: #f44336; /* Red color */
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 15px; /* Add spacing between links */
+}
+
+/* Add space between Update and Delete buttons */
+.contact-table td.actions a {
+    margin-right: 10px; /* Add spacing between buttons */
+}
+
+.contact-table a.update:hover,
+.contact-table a.delete:hover {
+    text-decoration: underline;
+}
+
+/* Enhanced design for the Search Contact page */
+.form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb); /* Light blue gradient */
+    border: 2px solid #1565c0; /* Dark blue border */
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.form-title {
+    text-align: center;
+    color: #1565c0; /* Dark blue */
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #004d40;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    font-size: 16px;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1565c0; /* Dark blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.submit-button:hover {
+    background-color: #0d47a1; /* Darker blue */
+    transform: scale(1.05);
+}
+
+.back-to-home {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #1565c0; /* Dark blue */
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.back-to-home:hover {
+    text-decoration: underline;
+}
+
+.results-title {
+    margin-top: 20px;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.results-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.results-list li {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Add spacing between columns in the results table */
+.results-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.results-table th,
+.results-table td {
+    padding: 10px 15px; /* Add spacing between columns */
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.results-table th {
+    background-color: #f3f3f3;
+    font-weight: bold;
+}
+
+.results-table tr:hover {
+    background-color: #f9f9f9;
+}
+
+.contact-table th {
+    background-color: #bbdefb; /* Light Blue */
+    color: #0d47a1; /* Dark Blue */
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+    border-bottom: 2px solid #1565c0;
+}
+
+.contact-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.contact-table tr:hover {
+    background-color: #e3f2fd;
+}
+
+.contact-table td.actions a {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    font-weight: bold;
+    text-decoration: none;
+    color: #f44336; /* Red color for links */
+    background: none;
+    box-shadow: none;
+    transition: color 0.3s;
+}
+
+.contact-table td.actions a:hover {
+    color: #d32f2f; /* Darker red on hover */
+    text-decoration: underline;
+}
+
+/* Add spacing between Update and Delete buttons */
+.contact-table td.actions a {
+    margin-right: 15px; /* Increased spacing between buttons */
+}
+
+/* Ensure Update and Delete buttons are in a single line */
+.actions-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px; /* Add spacing between Update and Delete */
+}
+
+.actions-container a {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #f44336; /* Red color */
+    background-color: #ffffff; /* White background */
+    border: 1px solid #f44336;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.actions-container a:hover {
+    background-color: #f44336; /* Red background on hover */
+    color: #ffffff; /* White text on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}

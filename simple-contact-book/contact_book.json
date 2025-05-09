@@ -1,0 +1,26 @@
+[
+    {
+        "role": "student",
+        "name": "Balaji Hariharan",
+        "phone": "8825629209",
+        "email": "balajihariharanns.24mca@kongu.edu"
+    },
+    {
+        "role": "faculty",
+        "name": "Radha Krishnan R",
+        "phone": "1357908642",
+        "email": "radha@gmail.com"
+    },
+    {
+        "role": "student",
+        "name": "Ela Mugil S",
+        "phone": "8754321678",
+        "email": "mugil@gmail.com"
+    },
+    {
+        "role": "student",
+        "name": "Sugumar M",
+        "phone": "9629341211",
+        "email": "sugumar@gmail.com"
+    }
+]
